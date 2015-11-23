@@ -34,3 +34,8 @@ reactive-var
 reactive-dict
 aldeed:collection2
 tracker
+aldeed:autoform
+aldeed:simple-schema
+aldeed:autoform-bs-datepicker
+rajit:bootstrap3-datepicker
+msavin:mongol
