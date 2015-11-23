@@ -1,17 +1,16 @@
-Tasks = new Meteor.Collection( 'tasks' );
+Tasks = new Mongo.Collection( 'tasks' );
 
 Tasks.allow({
-  insert: () => false,
+  insert: () => true,
   update: () => false,
   remove: () => false
 });
-
-Tasks.deny({
-  insert: () => true,
+/* Tasks.deny({
+  insert: () => false,
   update: () => true,
   remove: () => true
 });
-
+*/
 let TaskSchema = new SimpleSchema({
   taskName: {
     type: String,

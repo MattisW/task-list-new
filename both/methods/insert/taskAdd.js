@@ -1,11 +1,10 @@
 Meteor.methods({
     taskAdd:function(taskName, taskDate){
-      check(taskName,String);
-      check(taskDate,Date);
-      
+      // check(taskName,String);
+      console.log('METHOD IS FIRING');
       Tasks.insert({
-        name: taskName,
-        dueDate: taskDate
+        'taskName': taskName,
+        'taskDate': taskDate
       });
     }
 });

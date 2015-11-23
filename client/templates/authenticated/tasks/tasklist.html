@@ -1,7 +1,6 @@
 <template name="tasklist">
   <h2>Aufgaben</h2>
-  <form class="form-inline taskAdd">
-      {{#autoForm collection="Tasks" type="insert" id="tasksForm"}}
+      {{#autoForm collection="Tasks" type="insert" id="tasksForm" class="form-inline"}}
     <div class="form-group">
       <!-- <label for="exampleInputName2">Name</label> -->
       {{> afQuickField name="taskName" class="form-control" type="text"}}
@@ -14,5 +13,4 @@
     </div>
     <button type="submit" class="btn btn-default">Hinzufügen</button>
   {{/autoForm}}
-</form>
 </template>
